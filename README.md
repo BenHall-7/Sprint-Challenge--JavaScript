@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    - `.map` returns an array that is created by the callback return value
+
 2. What is the difference between a function and a method?
+
+    - a method is function contained as part of an object, in particular the `this` keyword enables the method to work on object members.
 
 3. What is closure?
 
+    - a closure is the scope created by a function. The concept is useful because returned values declared in the closure have access to other values in the closure.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. When used without an accompanying object, `this` refers to the entire page, the global object.
+
+    2. If an object calls the function with "." syntax, `this` refers to the calling object.
+
+    3. If you use a constructor with the `new` keyword, `this` refers to the object that was created.
+
+    4. If you use the `.call` or `.apply` methods with a new object, `this` refers to that object instead.
+
 5. Why do we need super() in an extended class?
+
+    - It allows us to call the inherited class's constructor. Else, we would have to rewrite our code
 
 ## Project Set up
 
@@ -56,7 +72,6 @@ Follow these steps for completing your project:
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
 - [ ] Add your team lead as a Reviewer on the Pull-request
 - [ ] TL then will count the HW as done by  merging the branch back into master.
-
 
 ## Minimum Viable Product
 
